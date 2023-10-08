@@ -15,8 +15,8 @@ namespace OperationResult.ErrorHandling.Rfc7807
         /// <summary>
         ///     Defines the base overridable functionality in order to return Error Details object.
         /// </summary>
-        /// <param name="response"></param>
-        /// <param name="args"></param>
+        /// <param name="response">The ObjectResult which will be adjusted.</param>
+        /// <param name="args">The necessary arguments.</param>
         protected virtual void AttachRfc7807Result(
             ref ObjectResult response,
             Rfc7807Args args)
@@ -54,8 +54,9 @@ namespace OperationResult.ErrorHandling.Rfc7807
         ///     Handles the OperationResult's cast from ActionResult with array of strings into the ActionResult with ErrorDetails 
         ///     (if the result of the mentioned operation is a client error code).
         /// </summary>
-        /// <param name="context"></param>
-        /// <exception cref="Exception"></exception>
+        /// <param name="context">The context of action result filter</param>
+        /// <exception cref="Exception">Throws exception, if the endpoint has not been found 
+        /// (the route values have to contain the "action" key with the Controller's method).</exception>
         public override void OnResultExecuting(ResultExecutingContext context)
         {
             if (!context.ActionDescriptor.RouteValues.TryGetValue("action", out var actionName))
