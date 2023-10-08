@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.0</TargetFramework>
-    <PackageId>OperationResult.Net</PackageId>
+    <PackageId>OperationResult.ErrorHandling</PackageId>
     <Version>1.0.0</Version>
     <Authors>Ganușceac Vlad</Authors>
-    <Product>OperationResult.Net</Product>
-    <Title>OperationResult.Net</Title>
+    <Product>OperationResult.ErrorHandling</Product>
+    <Title>OperationResult.ErrorHandling</Title>
     <Description>Applies the RFC7807 Error Details cast from ActionResult received at the Controller level by invoking some of these OperationResult's extension .AsOkOrFailure(), .AsNoContentOrFailure(), .AsCreatedOrFailure() etc.</Description>
     <RepositoryUrl>https://github.com/VladGanuscheak/OperationResult.ErrorHandling</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
