@@ -70,9 +70,7 @@ namespace OperationResult.ErrorHandling.Rfc7807
 
             if (!hasIgnoreAttribute)
             {
-                var result = context.Result as ObjectResult;
-
-                if (result != null)
+                if (context.Result is ObjectResult result)
                 {
                     if (result.StatusCode >= (int)HttpStatusCode.BadRequest &&
                         result.StatusCode < (int)HttpStatusCode.InternalServerError)
