@@ -9,7 +9,7 @@ namespace OperationResult.ErrorHandling.Rfc9110
     /// </summary>
     public static class Rfc9110
     {
-        private const int AnusedErrorCode = 418;
+        private const int UnusedErrorCode = 418;
         private const int MisdirectedErrorCode = 421;
         private const int UnprocessableContentErrorCode = 422;
 
@@ -36,7 +36,7 @@ namespace OperationResult.ErrorHandling.Rfc9110
             { (int)HttpStatusCode.UnsupportedMediaType, "https://www.rfc-editor.org/rfc/rfc9110.html#name-415-unsupported-media-type" },
             { (int)HttpStatusCode.RequestedRangeNotSatisfiable, "https://www.rfc-editor.org/rfc/rfc9110.html#name-416-range-not-satisfiable" },
             { (int)HttpStatusCode.ExpectationFailed, "https://www.rfc-editor.org/rfc/rfc9110.html#name-417-expectation-failed" },
-            { AnusedErrorCode, "https://www.rfc-editor.org/rfc/rfc9110.html#name-418-unused" },
+            { UnusedErrorCode, "https://www.rfc-editor.org/rfc/rfc9110.html#name-418-unused" },
             { MisdirectedErrorCode, "https://www.rfc-editor.org/rfc/rfc9110.html#name-421-misdirected-request" },
             { UnprocessableContentErrorCode, "https://www.rfc-editor.org/rfc/rfc9110.html#name-422-unprocessable-content" },
             { (int)HttpStatusCode.UpgradeRequired, "https://www.rfc-editor.org/rfc/rfc9110.html#name-426-upgrade-required" }
