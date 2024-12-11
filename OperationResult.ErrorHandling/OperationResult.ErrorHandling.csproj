@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <PackageId>OperationResult.ErrorHandling</PackageId>
-    <Version>8.0.0</Version>
+    <Version>9.0.0</Version>
     <Authors>Ganușceac Vlad</Authors>
     <Product>OperationResult.ErrorHandling</Product>
     <Title>OperationResult.ErrorHandling</Title>
@@ -11,27 +11,34 @@
     <RepositoryUrl>https://github.com/VladGanuscheak/OperationResult.ErrorHandling</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>result;operationresult;fluentoperationresult;actionresult;rfc7807;actionfilter;.net;dotnet;c#</PackageTags>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>logo.png</PackageIcon>
     <PackageIconUrl />
-    <PackageReleaseNotes>Migrated to .Net 8.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Migrated to .Net 9.0</PackageReleaseNotes>
+    <PackageLicenseFile>license.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\README.md">
+    <None Include="..\..\OperationResult.Extensions\license.txt">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="C:\Users\User\Desktop\Logos\logo.png">
+    <None Include="..\README.md">
       <Pack>True</Pack>
-      <PackagePath></PackagePath>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

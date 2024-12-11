@@ -16,7 +16,7 @@ namespace OperationResult.ErrorHandling.Rfc9110
         /// <summary>
         ///     The Dictionary which maps Client Http Errors (400-499) with corresponding documentation from RFC 9110. 
         /// </summary>
-        public static Dictionary<int, string> ClientErrorCodes = new Dictionary<int, string>
+        public static Dictionary<int, string> ClientErrorCodes = new()
         {
             { (int)HttpStatusCode.BadRequest, "https://www.rfc-editor.org/rfc/rfc9110.html#name-400-bad-request" },
             { (int)HttpStatusCode.Unauthorized, "https://www.rfc-editor.org/rfc/rfc9110.html#name-401-unauthorized" },

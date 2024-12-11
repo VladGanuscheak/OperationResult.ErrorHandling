@@ -21,7 +21,6 @@ namespace OperationResult.ErrorHandling.Rfc7807
         /// <summary>
         ///     Errror or Informational messages.
         /// </summary>
-        public List<string> Messages { get; set; } 
-            = new List<string>();
+        public List<string> Messages { get; set; }  = [];
     }
 }
